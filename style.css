@@ -1,0 +1,139 @@
+#pet {
+	display: none;
+}
+header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	color: var(--light-main);
+}
+
+h1 {
+	color: var(--light-main);
+	margin-bottom: 10px;
+}
+#kortommig {
+	display: flex;
+}
+#bilden {
+	height: 100px;
+	width: 100px;
+}
+#backgroundimage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+			to right,
+			var(--darkest-main-filter) 20%,
+			var(--medium-main-filter)
+		),
+		url("src/Peter.jpg");
+	background-position: bottom 15% right 40%;
+	background-size: cover;
+	z-index: -1;
+
+	/* filter: blur(20px); */
+}
+#textruta {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+	max-width: 50%;
+	flex-grow: 1;
+	/* margin: 40px; */
+	/* filter: blur(10px); */
+	/* background-attachment: fixed; */
+}
+.socialContainer {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+.social {
+	margin: 10px;
+}
+.social img {
+	background-color: aliceblue;
+	width: 50px;
+	height: 50px;
+	border-radius: 20px;
+	animation: 2s ease fadin;
+}
+#textruta p,
+#textruta h1 {
+	animation: 2s ease fadin;
+}
+
+@keyframes fadin {
+	0% {
+		filter: blur(300px);
+		/* backdrop-filter: blur(0px);
+			background-color: transparent;
+			color: transparent; */
+	}
+	70% {
+		filter: blur(0px);
+		/* background-color: transparent;
+		color: transparent; */
+	}
+	100% {
+		filter: blur(0px);
+		/* backdrop-filter: blur(35px); */
+	}
+}
+#blurrer {
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	padding: 20px;
+	border-radius: 20px;
+	color: var(--light-main);
+	/* backdrop-filter: blur(35px);
+	-webkit-backdrop-filter: blur(35px); */
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	backdrop-filter: blur(35px);
+	-webkit-backdrop-filter: blur(35px);
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+ul li {
+	list-style: none;
+	margin: 10px;
+	margin-left: 40px;
+	color: var(--light-main);
+}
+
+#mail {
+	text-align: right;
+	flex-grow: 1;
+}
+@media (min-width: 500px) {
+	* {
+		text-align: left;
+	}
+
+	#pet {
+		display: block;
+	}
+	header {
+		align-items: flex-start;
+	}
+	#textruta {
+		margin: 20px;
+	}
+}

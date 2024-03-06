@@ -1,0 +1,36 @@
+:root {
+	--darkest-main: #0d0a1f;
+	--dark-main: #1e1e24;
+	--medium-main: #211a4d;
+	--light-main: #dcd9f2;
+	--darkest-main-filter: #0d0a1f;
+	--medium-main-filter: #211a4d80;
+}
+
+@font-face {
+	font-family: "camptonBook";
+	src: url("src/CamptonBook.otf");
+	font-display: swap;
+}
+@font-face {
+	font-family: "CamptonMedium";
+	src: url("src/CamptonMedium.otf");
+	font-display: swap;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: camptonBook;
+	color: var(--light-main);
+	line-height: 1.7;
+	text-align: center;
+}
+.back {
+	position: sticky;
+	top: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: var(--medium-main);
+}
