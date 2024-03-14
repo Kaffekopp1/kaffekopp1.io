@@ -102,17 +102,20 @@ h1 {
 	backdrop-filter: blur(35px);
 	-webkit-backdrop-filter: blur(35px);
 } */
+
 #mobileMenu {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 }
 #mobileMenu li {
 	list-style: none;
 	margin: 10px;
-	width: 100%;
+	text-align: center;
+	width: 200px;
 }
 #mobileMenu li a {
+	display: block;
 	width: 100%;
 	padding: 5px;
 	border: dotted;
