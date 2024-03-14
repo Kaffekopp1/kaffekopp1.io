@@ -51,6 +51,11 @@ article {
 	justify-content: center;
 	padding: 10px;
 }
+.innerArticle {
+	border: dotted;
+	border-radius: 15px;
+	/* margin: 20px; */
+}
 h2 {
 	text-align: center;
 }
@@ -78,6 +83,7 @@ article p {
 	.rightArticle {
 		flex-direction: row-reverse;
 	}
+
 	.typeContainer {
 		flex-direction: column;
 	}
