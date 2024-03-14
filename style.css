@@ -96,25 +96,31 @@ h1 {
 	-webkit-backdrop-filter: blur(35px); */
 }
 
-nav {
+/* nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	backdrop-filter: blur(35px);
 	-webkit-backdrop-filter: blur(35px);
-}
+} */
 #mobileMenu {
 	display: flex;
 	flex-direction: column;
 }
-#mobileMenu li {
+#mobileMenu li a {
 	margin: 10px;
 	padding: 5px;
 	border: dotted;
 	border-radius: 5px;
 	list-style: none;
 	color: var(--light-main);
+	text-decoration: none;
+	animation: 2s ease fadin;
+}
+#mobileMenu li a:hover {
+	color: black;
+	background-color: var(--light-main);
 }
 
 #mail {
