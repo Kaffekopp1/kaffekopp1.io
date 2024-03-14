@@ -71,19 +71,17 @@ h1 {
 
 @keyframes fadin {
 	0% {
-		filter: blur(300px);
-		/* backdrop-filter: blur(0px);
-			background-color: transparent;
-			color: transparent; */
+		filter: blur(200px);
+		background-color: transparent;
+		color: transparent;
 	}
 	70% {
 		filter: blur(0px);
-		/* background-color: transparent;
-		color: transparent; */
+		background-color: transparent;
+		color: var(--light-main);
 	}
 	100% {
 		filter: blur(0px);
-		/* backdrop-filter: blur(35px); */
 	}
 }
 #blurrer {
