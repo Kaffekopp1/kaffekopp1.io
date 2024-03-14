@@ -4,9 +4,21 @@ body {
 	display: flex;
 	align-items: center;
 }
-* {
-	margin: 10px;
+/* på grund av mobil */
+#backgroundimage {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 120%;
+	background: linear-gradient(var(--medium-main), var(--darkest-main));
+	z-index: -1;
 }
+
+/* * {
+	margin: 10px;
+} */
 /* #kortommig {
 	display: flex;
 	flex-direction: column;
@@ -17,13 +29,14 @@ img {
 	min-width: 50%;
 	max-width: 50%;
 	border-radius: 20px;
+	margin: 10px;
 }
 article {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 10px;
+	padding: 40px;
 }
 h2 {
 	text-align: center;
@@ -42,6 +55,7 @@ article p {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin: 0px;
 }
 
 .buttonScroller {
@@ -50,15 +64,19 @@ article p {
 	background-color: transparent;
 	border: transparent;
 	font-size: 20px;
+	margin: 20px;
+	margin-top: 10px;
 }
 #otherProjectsCarousell {
 	display: flex;
-	max-width: 80vw;
+	max-width: 90vw;
 	overflow-x: auto;
 	overflow-y: hidden;
 	border: dotted;
 	border-radius: 20px;
 	background-color: var(--medium-main);
+	margin: 0px;
+	margin-bottom: 20px;
 }
 
 .projectImgContainer {
