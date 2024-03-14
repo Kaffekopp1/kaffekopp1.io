@@ -110,21 +110,10 @@ nav {
 }
 #mobileMenu li {
 	margin: 10px;
-	text-align: center;
 	padding: 5px;
 	border: dotted;
 	border-radius: 5px;
-}
-
-menu {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-}
-
-menu li {
 	list-style: none;
-	/* margin-left: 40px; */
 	color: var(--light-main);
 }
 
@@ -154,6 +143,10 @@ menu li {
 		max-width: 200px;
 		display: flex;
 		align-items: center;
+		justify-content: center;
+	}
+	#mobileMenu li a {
+		text-align: center;
 	}
 	.socialContainer {
 		justify-content: flex-start;
