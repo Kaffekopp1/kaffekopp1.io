@@ -107,26 +107,28 @@ h1 {
 #mobileMenu {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+}
+#mobileMenu li {
+	list-style: none;
+	margin: 10px;
+	width: 100%;
 }
 #mobileMenu li a {
-	margin: 10px;
+	width: 100%;
 	padding: 5px;
 	border: dotted;
 	border-radius: 5px;
-	list-style: none;
 	color: var(--light-main);
 	text-decoration: none;
 	animation: 2s ease fadin;
 }
+
 #mobileMenu li a:hover {
 	color: black;
 	background-color: var(--light-main);
 }
 
-#mail {
-	text-align: right;
-	flex-grow: 1;
-}
 @media (min-width: 500px) {
 	* {
 		text-align: left;
